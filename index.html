@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+  <nav class="bg-gray-900">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-center ">
+      <a class="flex-shrink-0 text-white hover:text-gray-300" href="#">
+        <img class="logo" src="img/unellez.png"  alt="logo">
+      </a>
+    </div>
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-around ">
+      <a class="flex-shrink-0 text-white hover:text-gray-300" href="#">
+        <h4 class="logo2 mb-4">arse.unellez.edu.ve</h4>
+      </a>
+      <div class="flex justify-center">
+        <div class="hidden md:block">
+        <div class="ml-4 flex items-center space-x-4">
+          <a class="text-gray-300 border mb-4 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="#">Preeinscritos</a>
+
+          <a class="text-gray-300 border mb-4 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="#">Unellez Track</a>
+
+          <a class="text-gray-300 border mb-4 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="#">Ingresar al sistema</a>
+        </div>
+      </div>
+    </div>
+      
+    <div class="relative inline-block text-left">
+  <div>
+    <button class="bg-gray-800 text-white font-semibold py-2 px-4 mb-4 rounded inline-flex items-center" id="menu">
+      <span>Iniciar sesión</span>
+      
+    </button>
+  </div>
+  <div class="hidden origin-top-right absolute right-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu" >
+    <div class="py-4 px-4" role="none">
+      <form class="space-y-4">
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2" for="username">Estudiante / Profesor / Empleado</label>
+          <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="username" type="text" placeholder="Nombre de usuario">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2" for="password">Contraseña</label>
+          <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="password" type="password" placeholder="Contraseña">
+        </div>
+        <div>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full" type="submit">Iniciar sesión</button>
+        </div>
+      </form>
+      <div class="text-gray-700 text-center mt-4">
+        ¿No tienes una cuenta?
+        <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Regístrate</a>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+    
+<section class="bg-gray-900 text-white flex justify-start">
+  <div class="max-w-screen-xl px-8 py-32 lg:flex lg:h-screen lg:items-start">
+    <div class="mx-auto max-w-3xl text-start">
+      <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+       MODIFICAR E IMPLEMENTAR FRAMEWORK TAILWIND CSS PARA EL SISTEMA DE ESTUDIOS DUX DE LA UNELLEZ
+      </h1>
+
+      <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed"> </p>
+      <div class="mt-8 flex flex-wrap justify-start gap-4">
+        <a
+          class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+          href="#mapa"> Ubicación</a>
+        <a
+          class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+          href="#contacto">
+          Contacto
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- feature seccion -->
+
+<section class="bg-gray-900 py-12" id="mapa">
+  <div class="container mx-auto flex flex-col items-center">
+    <h2 class="text-3xl text-white font-bold mb-8">Ubicación de la universidad</h2>
+    <div class="w-full h-full">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63115.27289494262!2d-70.27476869737845!3d8.624336172957209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7b578e8671fd83%3A0xeae1ae9ac67426ca!2sUniversidad%20Nacional%20Experimental%20de%20los%20LLanos%20Occidentales%20%22Ezequiel%20Zamora%22!5e0!3m2!1ses!2sve!4v1682946068947!5m2!1ses!2sve" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- footer -->
+
+<footer class="bg-gray-800 text-gray-400 py-10" id="contacto">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full md:w-1/4 px-4 mb-8">
+        <h4 class="text-lg font-bold mb-4">UNELLEZ</h4>
+        <p>La Universidad que Siembra</p>
+      </div>
+      <div class="w-full md:w-1/4 px-4 mb-8">
+        <h4 class="text-lg font-bold mb-4">Enlaces útiles</h4>
+        <ul>
+          <li><a href="https://unellez.edu.ve/portal/"   target="_blank" class="hover:text-gray-200">Inicio</a><li>
+          <li><a href="https://unellez.edu.ve/noticias/" target="_blank" class="hover:text-gray-200">Sistema De Noticias</a></li>
+          <li><a href="#" class="hover:text-gray-200">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/4 px-4 mb-8">
+        <h4 class="text-lg font-bold mb-4">Redes sociales</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/unellezoficial/?hl=es-la" target="_blank" class="hover:text-gray-200">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/4 px-4 mb-8">
+        <h4 class="text-lg font-bold mb-4">Contacto</h4>
+        <p>Dirección: Av. 23 de Enero, Redoma de Ezequiel Zamora, Sede UNELLEZ - Barinas- Estado- Barinas.</p>
+        <p>Teléfono: </p>
+        <p>Correo electrónico: <br>despachorectoral@unellez.edu.ve</p>
+        <p>RIF: G-20007705-0.</p>
+      </div>
+    </div>
+    <hr class="border-gray-700 my-8">
+    <p class="text-sm text-center">© 2023 Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
