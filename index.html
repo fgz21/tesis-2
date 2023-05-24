@@ -13,19 +13,19 @@
 
     <!-- navbar -->
     <nav class="bg-gray-900">
-      <div class="max-w-7xl mx-auto px-2 py-5 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-center ">
-          <a class="flex-shrink-0 text-white hover:text-gray-300" href="#">
-            
-          </a>
-        </div>
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-around ">
-          <a class="flex-shrink-0 text-white hover:text-gray-300" href="#">
-            <h4 class="logo2 mb-4">arse.unellez.edu.ve</h4>
-          </a>
-          <div class="flex justify-center">
-            <div class="hidden md:block">
+  <div class="max-w-7xl mx-auto px-2 py-5 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-center ">
+      <a class="flex-shrink-0 text-white hover:text-gray-300" href="#">
+        
+      </a>
+    </div>
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mt-5">
+      <div class="flex items-center justify-around ">
+        <a class="flex-shrink-0 text-white hover:text-gray-300" href="#">
+          <h4 class="logo2 mb-4">arse.unellez.edu.ve</h4>
+        </a>
+        <div class="flex justify-center">
+          <div class="hidden md:block">
             <div class="ml-4 flex items-center space-x-4">
               <a class="text-gray-300 border mb-4 hover:text-white px-3 py-2 rounded-md text-sm font-medium transform transition-transform hover:scale-105" href="#">Preinscritos</a>
 
@@ -35,37 +35,72 @@
             </div>
           </div>
         </div>
-          
         <div class="relative inline-block text-left">
-      <div>
-        <button class="bg-gray-800 text-white font-semibold py-2 px-4 mb-4 rounded inline-flex items-center" id="menu">
-          <span>Iniciar sesión</span>
-          
-        </button>
-      </div>
-      <div class="hidden origin-top-right absolute right-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu" >
-        <div class="py-4 px-4" role="none">
-          <form class="space-y-4">
-            <div>
-              <label class="block text-gray-700 font-semibold mb-2" for="username">Usuario</label>
-              <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="username" type="text" placeholder="Nombre de usuario">
+          <div>
+            <button class="bg-gray-800 text-white font-semibold py-2 px-4 mb-4 rounded inline-flex items-center" id="menu">
+              <span>Iniciar sesión</span>
+            </button>
+          </div>
+          <div class="hidden origin-top-right absolute right-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+            <div class="py-4 px-4" role="none">
+              <form class="space-y-4">
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2" for="username">Usuario</label>
+                  <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="username" type="text" placeholder="Nombre de usuario">
+                </div>
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2" for="password">Contraseña</label>
+                  <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="password" type="password" placeholder="Contraseña">
+                </div>
+                <div>
+                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full" type="submit">Iniciar sesión</button>
+                </div>
+              </form>
+              <div class="text-gray-700 text-center mt-4">
+                ¿No tienes una cuenta?
+                <button class="text-blue-500 hover:text-blue-700 font-semibold" id="register-menu">Regístrate</button>
+              </div>
             </div>
-            <div>
-              <label class="block text-gray-700 font-semibold mb-2" for="password">Contraseña</label>
-              <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="password" type="password" placeholder="Contraseña">
+          </div>
+        </div>
+        <div class="relative inline-block text-left">
+          <div>
+            <button class="bg-gray-800 text-white font-semibold py-2 px-4 mb-4 rounded inline-flex items-center" id="menu2">
+              <span>Regístrate</span>
+            </button>
+          </div>
+          <div class="hidden origin-top-right2 absolute right-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="register-menu">
+            <div class="py-4 px-4" role="none">
+              <form class="space-y-4" action="/addStudent" method="POST">
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2" for="name">Nombre</label>
+                  <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="name" type="text" placeholder="Ingresa tu nombre">
+                </div>
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2" for="email">Correo electrónico</label>
+                  <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="email" type="email" placeholder="Ingresa tu correo electrónico">
+                </div>
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2" for="password">Contraseña</label>
+                  <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="password" type="password" placeholder="Ingresa tu contraseña">
+                </div>
+                <div>
+                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full" type="submit">Regístrate</button>
+                </div>
+              </form>
+              <div class="text-gray-700 text-center mt-4">
+                ¿Ya tienes una cuenta?
+                <button class="text-blue-500 hover:text-blue-700 font-semibold" id="login-menu">Iniciar sesión</button>
+              </div>
             </div>
-            <div>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full" type="submit">Iniciar sesión</button>
-            </div>
-          </form>
-          <div class="text-gray-700 text-center mt-4">
-            ¿No tienes una cuenta?
-            <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Regístrate</a>
           </div>
         </div>
       </div>
     </div>
-    </nav>
+  </div>
+</nav>
+
+
 
 
      <!-- navbar -->
@@ -76,7 +111,7 @@
     <div class="max-w-screen-xl px-8 py-32 lg:flex lg:h-screen lg:items-start">
       <div class="mx-auto max-w-3xl text-start">
         <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-        Servicio Comunitario UNELLEZ VPDS
+        Servicio Comunitario <br> UNELLEZ VPDS
         </h1>
 
         <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed"> </p>
