@@ -1,5 +1,4 @@
-
-// efecto del button iniciar sesion 
+// efecto del button iniciar sesion
 
 const button = document.getElementById('menu');
 const dropdown = document.querySelector('.origin-top-right');
@@ -18,14 +17,11 @@ button2.addEventListener('click', () => {
 });
 
 
-
 //efecto menu
 
 const menuToggle = document.getElementById('menu-toggle');
-  const navbar = document.querySelector('.flex-col');
+const navbar = document.querySelector('.flex-col');
 
-  menuToggle.addEventListener('click', function() {
+menuToggle.addEventListener('click', function () {
     navbar.classList.toggle('hidden');
-  });
-
-
+});
