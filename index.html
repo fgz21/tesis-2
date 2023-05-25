@@ -1,190 +1,201 @@
 <!doctype html>
-<html>
+<html lang="ES">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="output.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title> Tesis </title>
 </head>
 <body>
- 
 
 
-    <!-- navbar -->
-    <nav class="bg-gray-900">
-  <div class="max-w-7xl mx-auto px-2 py-5 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-center ">
-      <a class="flex-shrink-0 text-white hover:text-gray-300" href="#">
-        
-      </a>
+<!-- navbar -->
+<nav class="bg-gray-900">
+    <div class="max-w-7xl mx-auto px-2 py-5 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-center ">
+            <a class="flex-shrink-0 text-white hover:text-gray-300" href="#">
+
+            </a>
+        </div>
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mt-5">
+            <div class="flex items-center justify-around ">
+                <a class="flex-shrink-0 text-white hover:text-gray-300" href="#">
+                    <h4 class="logo2 mb-4">arse.unellez.edu.ve</h4>
+                </a>
+                <div class="flex justify-center">
+                    <div class="hidden md:block">
+                        <div class="ml-4 flex items-center space-x-4">
+                            <a class="text-gray-300 border mb-4 hover:text-white px-3 py-2 rounded-md text-sm font-medium transform transition-transform hover:scale-105"
+                               href="#">Preinscritos</a>
+
+                            <a class="text-gray-300 border mb-4 hover:text-white px-3 py-2 rounded-md text-sm font-medium transform transition-transform hover:scale-105"
+                               href="#">Unellez Track</a>
+
+                            <a class="text-gray-300 border mb-4 hover:text-white px-3 py-2 rounded-md text-sm font-medium transform transition-transform hover:scale-105 href="
+                               #>Preguntas frecuentes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative inline-block text-left">
+                    <div>
+                        <button class="bg-gray-800 text-white font-semibold py-2 px-4 mb-4 rounded inline-flex items-center"
+                                id="menu">
+                            <span>Iniciar sesión</span>
+                        </button>
+                    </div>
+                    <div class="hidden origin-top-right absolute right-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
+                         role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        <div class="py-4 px-4" role="none">
+                            <form class="space-y-4" id="form-login">
+                                <label class="block text-gray-700 font-semibold mb-2" for="username">Usuario</label>
+                                <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400"
+                                       name="email" id="username" type="text" placeholder="Nombre de usuario">
+                                <label class="block text-gray-700 font-semibold mb-2" for="password">Contraseña</label>
+                                <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400"
+                                       name="password" id="password" type="password" placeholder="Contraseña">
+                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full"
+                                        type="submit">Iniciar sesión
+                                </button>
+                            </form>
+                            <div class="text-gray-700 text-center mt-4">
+                                ¿No tienes una cuenta?
+                                <button class="text-blue-500 hover:text-blue-700 font-semibold" id="register-menu">
+                                    Regístrate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative inline-block text-left">
+                    <div>
+                        <button class="bg-gray-800 text-white font-semibold py-2 px-4 mb-4 rounded inline-flex items-center"
+                                id="menu2">
+                            <span>Regístrate</span>
+                        </button>
+                    </div>
+                    <div class="hidden origin-top-right2 absolute right-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
+                         role="menu" aria-orientation="vertical" aria-labelledby="register-menu">
+                        <div class="py-4 px-4" role="none">
+                            <form class="space-y-4" id="form-signup">
+                                <label class="block text-gray-700 font-semibold mb-2" for="name">Nombre</label>
+                                <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400"
+                                       name="name" id="name" type="text" placeholder="Ingresa tu nombre">
+                                <label class="block text-gray-700 font-semibold mb-2" for="email">Correo
+                                    electrónico</label>
+                                <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400"
+                                       name="email" id="email" type="email" placeholder="Ingresa tu correo electrónico">
+                                <label class="block text-gray-700 font-semibold mb-2"
+                                       for="password">Contraseña</label>
+                                <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400"
+                                       name="password" id="password" type="password"
+                                       placeholder="Ingresa tu contraseña">
+                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full"
+                                        type="submit">Regístrate
+                                </button>
+                            </form>
+                            <div class="text-gray-700 text-center mt-4">
+                                ¿Ya tienes una cuenta?
+                                <button class="text-blue-500 hover:text-blue-700 font-semibold" id="login-menu">Iniciar
+                                    sesión
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mt-5">
-      <div class="flex items-center justify-around ">
-        <a class="flex-shrink-0 text-white hover:text-gray-300" href="#">
-          <h4 class="logo2 mb-4">arse.unellez.edu.ve</h4>
-        </a>
-        <div class="flex justify-center">
-          <div class="hidden md:block">
-            <div class="ml-4 flex items-center space-x-4">
-              <a class="text-gray-300 border mb-4 hover:text-white px-3 py-2 rounded-md text-sm font-medium transform transition-transform hover:scale-105" href="#">Preinscritos</a>
-
-              <a class="text-gray-300 border mb-4 hover:text-white px-3 py-2 rounded-md text-sm font-medium transform transition-transform hover:scale-105" href="#">Unellez Track</a>
-
-              <a class="text-gray-300 border mb-4 hover:text-white px-3 py-2 rounded-md text-sm font-medium transform transition-transform hover:scale-105 href="#>Preguntas frecuentes</a>
-            </div>
-          </div>
-        </div>
-        <div class="relative inline-block text-left">
-          <div>
-            <button class="bg-gray-800 text-white font-semibold py-2 px-4 mb-4 rounded inline-flex items-center" id="menu">
-              <span>Iniciar sesión</span>
-            </button>
-          </div>
-          <div class="hidden origin-top-right absolute right-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-            <div class="py-4 px-4" role="none">
-              <form class="space-y-4">
-                <div>
-                  <label class="block text-gray-700 font-semibold mb-2" for="username">Usuario</label>
-                  <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="username" type="text" placeholder="Nombre de usuario">
-                </div>
-                <div>
-                  <label class="block text-gray-700 font-semibold mb-2" for="password">Contraseña</label>
-                  <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="password" type="password" placeholder="Contraseña">
-                </div>
-                <div>
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full" type="submit">Iniciar sesión</button>
-                </div>
-              </form>
-              <div class="text-gray-700 text-center mt-4">
-                ¿No tienes una cuenta?
-                <button class="text-blue-500 hover:text-blue-700 font-semibold" id="register-menu">Regístrate</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="relative inline-block text-left">
-          <div>
-            <button class="bg-gray-800 text-white font-semibold py-2 px-4 mb-4 rounded inline-flex items-center" id="menu2">
-              <span>Regístrate</span>
-            </button>
-          </div>
-          <div class="hidden origin-top-right2 absolute right-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="register-menu">
-            <div class="py-4 px-4" role="none">
-              <form class="space-y-4" action="/addStudent" method="POST">
-                <div>
-                  <label class="block text-gray-700 font-semibold mb-2" for="name">Nombre</label>
-                  <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="name" type="text" placeholder="Ingresa tu nombre">
-                </div>
-                <div>
-                  <label class="block text-gray-700 font-semibold mb-2" for="email">Correo electrónico</label>
-                  <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="email" type="email" placeholder="Ingresa tu correo electrónico">
-                </div>
-                <div>
-                  <label class="block text-gray-700 font-semibold mb-2" for="password">Contraseña</label>
-                  <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400" id="password" type="password" placeholder="Ingresa tu contraseña">
-                </div>
-                <div>
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full" type="submit">Regístrate</button>
-                </div>
-              </form>
-              <div class="text-gray-700 text-center mt-4">
-                ¿Ya tienes una cuenta?
-                <button class="text-blue-500 hover:text-blue-700 font-semibold" id="login-menu">Iniciar sesión</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </nav>
 
 
-
-
-     <!-- navbar -->
+<!-- navbar -->
 
 <!-- primera section -->
-    
-  <section class="bg-gray-900 text-white flex justify-start">
+
+<section class="bg-gray-900 text-white flex justify-start">
     <div class="max-w-screen-xl px-8 py-32 lg:flex lg:h-screen lg:items-start">
-      <div class="mx-auto max-w-3xl text-start">
-        <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-        Servicio Comunitario <br> UNELLEZ VPDS
-        </h1>
+        <div class="mx-auto max-w-3xl text-start">
+            <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+                Servicio Comunitario <br> UNELLEZ VPDS
+            </h1>
 
-        <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed"> </p>
-        <div class="mt-8 flex flex-wrap justify-start gap-4">
-          <a
-            class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto transform transition-transform hover:scale-105"
-            href="#mapa"> Ubicación</a>
-          <a
-            class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto transform transition-transform hover:scale-105"
-            href="#contacto">
-            Contacto
-          </a>
+            <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed"></p>
+            <div class="mt-8 flex flex-wrap justify-start gap-4">
+                <a
+                        class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto transform transition-transform hover:scale-105"
+                        href="#mapa"> Ubicación</a>
+                <a
+                        class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto transform transition-transform hover:scale-105"
+                        href="#contacto">
+                    Contacto
+                </a>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
 <!-- primera section -->
 
 
-  <!-- mapa seccion -->
+<!-- mapa seccion -->
 
-  <section class="bg-gray-900 py-12" id="mapa">
+<section class="bg-gray-900 py-12" id="mapa">
     <div class="container mx-auto flex flex-col items-center">
-      <h2 class="text-3xl text-white font-bold mb-8">Ubicación Del Servicio Comunitario UNELLEZ</h2>
-      <div class="w-full h-full">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.3768825848783!2d-70.24390504009787!3d8.619622362488114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7b5780772d9977%3A0x777f340033850b6b!2sCaba%C3%B1a%2010!5e0!3m2!1ses!2sve!4v1683158679897!5m2!1ses!2sve" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+        <h2 class="text-3xl text-white font-bold mb-8">Ubicación Del Servicio Comunitario UNELLEZ</h2>
+        <div class="w-full h-full">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.3768825848783!2d-70.24390504009787!3d8.619622362488114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7b5780772d9977%3A0x777f340033850b6b!2sCaba%C3%B1a%2010!5e0!3m2!1ses!2sve!4v1683158679897!5m2!1ses!2sve"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- mapa seccion -->
-
+<!-- mapa seccion -->
 
 
 <!-- footer -->
 
-  <footer class="bg-gray-800 text-gray-400 py-10" id="contacto">
+<footer class="bg-gray-800 text-gray-400 py-10" id="contacto">
     <div class="container mx-auto px-4">
-      <div class="flex justify-center flex-wrap -mx-4">
-        <div class="w-full md:w-1/4 px-4 mb-8">
-          <h4 class="text-lg font-bold mb-4">UNELLEZ</h4>
-          <p>La Universidad que Siembra</p>
+        <div class="flex justify-center flex-wrap -mx-4">
+            <div class="w-full md:w-1/4 px-4 mb-8">
+                <h4 class="text-lg font-bold mb-4">UNELLEZ</h4>
+                <p>La Universidad que Siembra</p>
+            </div>
+            <div class="w-full md:w-1/4 px-4 mb-8">
+                <h4 class="text-lg font-bold mb-4">Enlaces útiles</h4>
+                <ul>
+                    <li><a href="https://unellez.edu.ve/portal/" target="_blank" class="hover:text-gray-200">Portal
+                        UNELLEZ</a>
+                    <li>
+                    <li><a href="https://unellez.edu.ve/noticias/" target="_blank" class="hover:text-gray-200">Sistema
+                        De Noticias UNELLEZ</a></li>
+                    <li><a href="#" class="hover:text-gray-200">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="w-full md:w-1/4 px-4 mb-8">
+                <h4 class="text-lg font-bold mb-4">Contacto</h4>
+                <p>Dirección: Av. 23 de Enero, Redoma de Ezequiel Zamora, Sede UNELLEZ - Barinas- Estado- Barinas.</p>
+                <p>Teléfono: </p>
+                <p>Correo electrónico: <br></p>
+                <p>RIF: G-20007705-0.</p>
+            </div>
         </div>
-        <div class="w-full md:w-1/4 px-4 mb-8">
-          <h4 class="text-lg font-bold mb-4">Enlaces útiles</h4>
-          <ul>
-            <li><a href="https://unellez.edu.ve/portal/"   target="_blank" class="hover:text-gray-200">Portal UNELLEZ</a><li>
-            <li><a href="https://unellez.edu.ve/noticias/" target="_blank" class="hover:text-gray-200">Sistema De Noticias UNELLEZ</a></li>
-            <li><a href="#" class="hover:text-gray-200">Contacto</a></li>
-          </ul>
-        </div>
-       
-        <div class="w-full md:w-1/4 px-4 mb-8">
-          <h4 class="text-lg font-bold mb-4">Contacto</h4>
-          <p>Dirección: Av. 23 de Enero, Redoma de Ezequiel Zamora, Sede UNELLEZ - Barinas- Estado- Barinas.</p>
-          <p>Teléfono: </p>
-          <p>Correo electrónico: <br></p>
-          <p>RIF: G-20007705-0.</p>
-        </div>
-      </div>
-      <hr class="border-gray-700 my-8">
-      <p class="text-sm text-center">© 2023 Todos los derechos reservados.</p>
+        <hr class="border-gray-700 my-8">
+        <p class="text-sm text-center">© 2023 Todos los derechos reservados.</p>
     </div>
-  </footer>
+</footer>
 
 <!-- footer -->
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
-
+<script src="js/createUser.js"></script>
+<script src="js/authUser.js"></script>
 
 </body>
 </html>

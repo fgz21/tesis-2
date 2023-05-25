@@ -3,65 +3,62 @@
 @tailwind utilities;
 
 
-
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
-.logo{
-	width: 200px;
-	height:50px;
-	display: flex;
-	justify-content: start;
-	align-items: start;
-	margin-top: 30px;
-	margin-bottom: 40px;
-}
-	
-
-
-.input{
-	width: 100%;
-	height: 50vh;
-	background: dark;
+.logo {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
+
+.input {
+    width: 100%;
+    height: 50vh;
+    background: dark;
+}
 
 
 @media (prefers-color-scheme: dark) {
-  /* Estilos para modo oscuro */
-  .bg-gray-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
-  }
+    /* Estilos para modo oscuro */
+    .bg-gray-800 {
+        --tw-bg-opacity: 1;
+        background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+    }
 
-  .text-gray-300 {
-    --tw-text-opacity: 1;
-    color: rgba(209, 213, 219, var(--tw-text-opacity));
-  }
+    .text-gray-300 {
+        --tw-text-opacity: 1;
+        color: rgba(209, 213, 219, var(--tw-text-opacity));
+    }
 
-  .hover\:text-white:hover {
-    --tw-text-opacity: 1;
-    color: rgba(255, 255, 255, var(--tw-text-opacity));
-  }
+    .hover\:text-white:hover {
+        --tw-text-opacity: 1;
+        color: rgba(255, 255, 255, var(--tw-text-opacity));
+    }
 
-  .hover\:bg-gray-700:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
-  }
+    .hover\:bg-gray-700:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+    }
 
-  .text-white {
-    --tw-text-opacity: 1;
-    color: rgba(255, 255, 255, var(--tw-text-opacity));
-  }
+    .text-white {
+        --tw-text-opacity: 1;
+        color: rgba(255, 255, 255, var(--tw-text-opacity));
+    }
 
-  .bg-gray-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
-  }
+    .bg-gray-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+    }
 }
 
 
