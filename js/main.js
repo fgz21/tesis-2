@@ -25,3 +25,5 @@ const navbar = document.querySelector('.flex-col');
 menuToggle.addEventListener('click', function () {
     navbar.classList.toggle('hidden');
 });
+
+
