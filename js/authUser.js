@@ -21,3 +21,4 @@ formLogin.addEventListener('submit', async (event) => {
         })
         .catch(error => alert(error.response.data.message))
 });
+

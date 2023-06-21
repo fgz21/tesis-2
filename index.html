@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/navigo"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title> Tesis </title>
+    <title> UNELLEZ VPDS </title>
 </head>
 <body>
 
@@ -38,6 +39,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- iniciar sesión -->
                 <div class="relative inline-block text-left">
                     <div>
                         <button class="bg-gray-800 text-white font-semibold py-2 px-4 mb-4 rounded inline-flex items-center"
@@ -55,19 +57,20 @@
                                 <label class="block text-gray-700 font-semibold mb-2" for="password">Contraseña</label>
                                 <input class="border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-400"
                                        name="password" id="password" type="password" placeholder="Contraseña">
-                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full"
-                                        type="submit">Iniciar sesión
+                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full" type="submit"><a href="/pages/perfilestudiante.html" data-navigo></a>Iniciar sesión
                                 </button>
                             </form>
+                            <!-- iniciar sesion -->
                             <div class="text-gray-700 text-center mt-4">
                                 ¿No tienes una cuenta?
-                                <button class="text-blue-500 hover:text-blue-700 font-semibold" id="register-menu">
-                                    Regístrate
+                                <button class="text-blue-500 hover:text-blue-700 font-semibold" id="register-menu"><a href="#"> Regístrate</a>
+                                    
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- registro -->
                 <div class="relative inline-block text-left">
                     <div>
                         <button class="bg-gray-800 text-white font-semibold py-2 px-4 mb-4 rounded inline-flex items-center"
@@ -95,10 +98,10 @@
                                         type="submit">Regístrate
                                 </button>
                             </form>
+                             <!--  fin registro -->
                             <div class="text-gray-700 text-center mt-4">
                                 ¿Ya tienes una cuenta?
-                                <button class="text-blue-500 hover:text-blue-700 font-semibold" id="login-menu">Iniciar
-                                    sesión
+                                <button class="text-blue-500 hover:text-blue-700 font-semibold" id="login-menu">Iniciar sesión
                                 </button>
                             </div>
                         </div>
@@ -118,17 +121,16 @@
     <div class="max-w-screen-xl px-8 py-32 lg:flex lg:h-screen lg:items-start">
         <div class="mx-auto max-w-3xl text-start">
             <h1  class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl intro-texto ">
-               SERVICIO COMUNITARIO <br> UNELLEZ VPDS<span class="cursor">|</span>
+               SERVICIO COMUNITARIO <br> UNELLEZ VPDS 2023<span class="cursor">|</span>
             </h1>
 
             <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed"></p>
             <div class="mt-8 flex flex-wrap justify-start gap-4">
-                <a
-                        class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto transform transition-transform hover:scale-105"
-                        href="#mapa"> Ubicación</a>
-                <a
-                        class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto transform transition-transform hover:scale-105"
-                        href="#contacto">
+                <a class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto transform transition-transform hover:scale-105"
+                href="#mapa"> Ubicación</a>
+
+                <a class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto transform transition-transform hover:scale-105"
+                 href="#contacto">
                     Contacto
                 </a>
             </div>
@@ -190,6 +192,8 @@
 </footer>
 
 <!-- footer -->
+
+<script src="../js/libreria1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
         integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

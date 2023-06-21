@@ -9,7 +9,13 @@
     <!-- cdn  del boxi -->
     <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"/>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- libreria -->
+    <script src="//unpkg.com/navigo"></script>
+
     <link rel="stylesheet" href="../css/style.css">
+
     <title> Perfil-estudiante </title>
 </head>
 <body>
@@ -65,35 +71,44 @@
         <!-- aside -->
         <aside class="flex w-72 flex-col space-y-2 border-r-2 border-gray-200 bg-white p-2" style="height: 90.5vh"
                x-show="asideOpen">
-            <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+
+            <ul href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
                 <span class="text-2xl"><i class="bx bx-home"></i></span>
-                <span>Inicio</span>
-            </a>
+                <button>
+                    <li><a class="text-1xl" href="../index.html">inicio</a></li>
+                </button>
+            </ul>
 
-            <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+            <ul href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                <iconify-icon class="text-2xl" icon="humbleicons:dashboard"></iconify-icon>
+                <button>
+                    <li><a class="text-sm" href="#">Sobre el Servicio comunitario</a></li>
+                </button>
+            </ul>
+
+             <ul href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
                 <span class="text-2xl"><i class="bx bx-book"></i></span>
-                <span>Acerca del servicio comunitario</span>
-            </a>
+                <button>
+                    <li><a class="text-sm" href="#">Eventos del Servicio comunitario</a></li>
+                </button>
+            </ul>
 
-            <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
-                <span class="text-2xl"><i class="bx bx-book"></i></span>
-                <span>Eventos y Actividades</span>
-            </a>
-
-            <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+            <ul href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
                 <span class="text-2xl"><i class="bx bx-user"></i></span>
-                <span>Tu Perfil</span>
-            </a>
+                <button>
+                    <li><a class="text-sm" href="#">Tu Perfil</a></li>
+                </button>
+            </ul>     
         </aside>
 
         <!-- component -->
-        <!-- This is an example component -->
+        
         <div class='flex items-center justify-center mt-5'>
             <div class="rounded-xl border p-5 shadow-md w-9/12 bg-white">
                 <div class="flex w-full items-center justify-between border-b pb-3">
                     <div class="flex items-center space-x-3">
                         <div class="h-8 w-8 rounded-full bg-slate-400"></div>
-                        <div class="text-lg font-bold text-slate-700">Nombre Y Apellido</div>
+                        <div class="text-lg font-bold text-slate-700">MSc.Avilio Vergara</div>
                     </div>
                     <div class="flex items-center space-x-8">
                         <button class="rounded-2xl border bg-neutral-100 px-3 py-1 text-xs font-semibold">Coordinador
@@ -103,11 +118,8 @@
                 </div>
 
                 <div class="mt-4 mb-6">
-                    <div class="mb-3 text-xl font-bold">Bienvenidos nuevos estudiantes del servicio comunitario!</div>
-                    <div class="text-sm text-neutral-600">Aliquam a tristique sapien, nec bibendum urna. Maecenas
-                        convallis dignissim turpis, non suscipit mauris interdum at. Morbi sed gravida nisl, a pharetra
-                        nulla. Etiam tincidunt turpis leo, ut mollis ipsum consectetur quis. Etiam faucibus est risus,
-                        ac condimentum mauris consequat nec. Curabitur eget feugiat massa
+                    <div class="mb-3 text-xl font-bold">¡Bienvenidos nuevos estudiantes del servicio comunitario de la UNELLEZ!</div>
+                    <div class="text-sm text-neutral-600">Nos complace darles la bienvenida a esta experiencia transformadora de aprendizaje y servicio. En UNELLEZ, estamos comprometidos en fomentar una cultura de servicio y colaboración en nuestra comunidad, y estamos seguros de que su participación en el servicio comunitario será una exelente experiencia para ustedes y para las comunidades a las que servirán. Los alentamos a trabajar juntos para crear un impacto positivo y significativo en nuestras comunidades, y esperamos que su tiempo en el servicio comunitario les brinde la oportunidad de desarrollar habilidades valiosas, establecer conexiones y hacer una diferencia real en el mundo.
                     </div>
                 </div>
 
@@ -120,7 +132,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                           d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
                                 </svg>
-                                <span></span>
+                                <span>Comentarios</span>
                             </div>
                             <div class="flex cursor-pointer items-center transition hover:text-slate-600">
                                 <svg xmlns="" class="mr-1.5 h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -128,7 +140,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                           d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/>
                                 </svg>
-                                <span></span>
+                                <span>Likes</span>
                             </div>
                         </div>
                     </div>
@@ -142,6 +154,7 @@
 
 
 <script src="../js/perfilestudiante.js"></script>
+<script src="../js/libreria1.js"></script>
 
 
 </body>
