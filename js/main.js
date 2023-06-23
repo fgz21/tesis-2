@@ -1,5 +1,4 @@
 // efecto del button iniciar sesion
-
 const button = document.getElementById('menu');
 const dropdown = document.querySelector('.origin-top-right');
 
