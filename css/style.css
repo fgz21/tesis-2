@@ -151,3 +151,12 @@
   animation: word 7s infinite;
   animation-delay: -5.6s;
 }
+
+
+
+/* style Question */
+
+.preguntas{
+  width: 100%;
+  height: 180vh;
+}
